@@ -1,0 +1,1 @@
+print('YES' if sum([c=='x' for c in input()])<8 else 'NO')

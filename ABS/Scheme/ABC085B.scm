@@ -1,0 +1,16 @@
+(define (create-vct N)
+  (let ((a (make-vector N)))
+    (dotimes (i N)
+      (set! (vector-ref a i) (read)))
+  a))
+
+(define (kagami-mochi d)
+  (let ((count 0) (type (make-vector 101 0)))
+    (dotimes (i (vector-length d))
+      (set! (vector-ref type (vector-ref d i)) (+ (vector-ref type (vector-ref d i)) 1)))
+    (dotimes (i (vector-length type))
+      (if (not (= (vector-ref type i) 0))
+        (set! count (+ count 1))))
+  count))
+
+(display (kagami-mochi (create-vct (read))))

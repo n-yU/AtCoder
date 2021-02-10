@@ -1,0 +1,1 @@
+print('Yes' if sum([int(c) for c in input()])%9==0 else 'No')

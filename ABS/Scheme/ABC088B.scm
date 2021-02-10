@@ -1,0 +1,16 @@
+(define (create-vct N)
+  (let ((a (make-vector N)))
+    (dotimes (i N)
+      (set! (vector-ref a i) (read)))
+    a))
+
+(define (card-game a)
+  (let ((alice 0) (bob 0))
+    (set! a (sort a >))
+    (dotimes (i (vector-length a))
+      (if (zero? (remainder i 2))
+        (set! alice (+ alice (vector-ref a i)))
+        (set! bob (+ bob (vector-ref a i)))))
+  (- alice bob)))
+
+(display (card-game (create-vct (read))))
