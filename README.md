@@ -6,13 +6,14 @@ Summarizing my records of the study in AtCoder.
 - **Python** (3.8.2) (.py)
 
 ## Contest Status
-- Rank - 10653rd
-- Rating - 939
+- Rank - 11618th
+- Rating - 893
 - Highest Rating - 1009 (gr.5(+191))
 
-## Competition History (49)
+## Competition History (50)
 | Date | Contest | Submissions | Performance | Rating |
 ----|----|----|----|----
+| 2021.02.21 | ARC113 | A | 364 | 893 (-46) |
 | 2021.02.20 | ABC192 | ABDE | 1186 | 939 (+31) |
 | 2020.11.22 | ABC184 | ABD | 1117 | 908 (+26) |
 | 2020.07.25 | M-solutions2020 | ABC | 495 | 882 (-37) |
