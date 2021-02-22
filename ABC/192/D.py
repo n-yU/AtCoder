@@ -1,7 +1,14 @@
 X = input()
 M = int(input())
+l, r = int(max(list(X))), int(1e18) + 1
+m = l
 
-for d in range(int(max(list(X))) + 1, 100000):
+if len(X) == 1:
+    print(1 if int(X) <= M else 0)
+    exit()
+
+while r - l > 1:
+    d = (l + r) // 2
     t, Y = M, []
     while t > 0:
         Y.append(ord('0') + (t % d))
@@ -9,9 +16,9 @@ for d in range(int(max(list(X))) + 1, 100000):
     Y = Y[::-1]
 
     if len(Y) > len(X):
-        continue
+        l = d
     elif len(Y) < len(X):
-        break
+        r = d
     else:
         b = 1
         for x, y in zip(X, Y):
@@ -25,8 +32,8 @@ for d in range(int(max(list(X))) + 1, 100000):
                 break
 
         if b:
-            continue
+            l = d
         else:
-            break
+            r = d
 
-print(d - int(max(list(X))) - 1)
+print(l - m)
