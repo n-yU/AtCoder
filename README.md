@@ -6,13 +6,14 @@ Summarizing my records of the study in AtCoder.
 - **C++** (GCC 9.2.1) (.cpp)
 
 ## Contest Status
-- Rank - 10986th
-- Rating - **928**
+- Rank - 10770th
+- Rating - **942**
 - Highest Rating - 1009 (gr.5(+191))
 
-## Competition History (51)
+## Competition History (52)
 No. | Date | Contest | Submissions | Performance | Rating |
 ----|----|----|----|----|----
+| 52 | 2021.03.06 | ABC194 | ABCD | 1058 | 942 (+14) |
 | 51 | 2021.02.27 | ABC193 | ABCD | 1206 | 928 (+35) |
 | 50 | 2021.02.21 | ARC113 | A | 364 | 893 (-46) |
 | 49 | 2021.02.20 | ABC192 | ABDE | 1186 | 939 (+31) |
